@@ -1,7 +1,7 @@
-Firefox Add-ons (addons.mozilla.org) listing: Standard Cyrillic 1.0.0
+Firefox Add-ons (addons.mozilla.org) listing: Standard Cyrillic 1.0.1
 ====================================================================
 
-Upload:      standard-cyrillic-1.0.0-firefox.zip, in the folder above this one
+Upload:      standard-cyrillic-1.0.1-firefox.zip, in the folder above this one
              (built by ./make-zips.sh; web-ext lint: 0 errors, 0 warnings,
              0 notices)
 Images:      store/ (the same as for Chrome)
@@ -9,7 +9,8 @@ Dashboard:   https://addons.mozilla.org/developers/
              (free; sign in with a Mozilla account in your name)
 
 Submit as:   "On this site" (listed on addons.mozilla.org)
-Platforms:   Firefox and Firefox for Android (the package says both)
+Platforms:   Firefox 140 and later, and Firefox for Android 142 and later
+             (the package says both)
 Source code: not needed: nothing is minified or built.
 
 
@@ -94,7 +95,7 @@ Screenshots (1280x800), with captions:
   screenshot-2-before.png    A Bulgarian page without it
   screenshot-3-after.png     The same page with it
 
-Version notes (1.0.0):
+Version notes (1.0.1):
 The first version.
 
 Notes to the reviewer:

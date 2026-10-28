@@ -22,10 +22,10 @@ for r in m.get("web_accessible_resources", []):
 m["browser_specific_settings"] = {
     "gecko": {
         "id": "{633f514a-310b-4700-a143-3a1c5b055de7}",
-        "strict_min_version": "128.0",
+        "strict_min_version": "140.0",
         "data_collection_permissions": {"required": ["none"]},
     },
-    "gecko_android": {"strict_min_version": "128.0"},
+    "gecko_android": {"strict_min_version": "142.0"},
 }
 json.dump(m, open(sys.argv[1], "w"), indent=2, ensure_ascii=False)
 PY
