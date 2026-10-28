@@ -121,7 +121,9 @@ async function check(face) {
     const { ratio, xHeight } = measure(face, family);
     if (ratio < HANDWRITTEN_RATIO) return;
     // Plex's x-height measured under a name of its own, so that the letters
-    // put in are as tall as the font's own
+    // put in are at least as tall as the font's own: larger where the font's
+    // lowercase is taller, never smaller, as Plex shrunk to a shorter
+    // x-height made the text look narrow (a reader, 28 October 2026)
     const probeFile = plexFile(face, weightOf(face));
     const probeFamily = `standard-cyrillic-probe-${probeFile}`;
     const probe = new FontFace(probeFamily, (await plexBytes(probeFile)).slice(0), {
@@ -134,7 +136,7 @@ async function check(face) {
     document.fonts.delete(probe);
     const scale =
         plex.xHeight > 0 && xHeight > 0
-            ? Math.min(1.25, Math.max(0.8, xHeight / plex.xHeight))
+            ? Math.min(1.25, Math.max(1, xHeight / plex.xHeight))
             : 1;
     for (const [weight, plexWeight] of weightBands(face)) {
         if (!enabled) return;
