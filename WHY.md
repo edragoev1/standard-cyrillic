@@ -68,6 +68,16 @@ that. Print can keep the two alphabets apart where it is able to, and the
 standard shapes do. Handwriting and italics can keep their own shapes, as
 they always have.
 
+The standard shapes are also what everything already printed in Cyrillic
+is set in. Nearly every Bulgarian book on a shelf today was printed in
+them, and so are the books in the other languages written in Cyrillic, as
+Macedonian, Serbian, Ukrainian and Russian, which many Bulgarian readers
+pick up, for technical subjects above all, where a book in Bulgarian may
+not exist. A shared set of letter shapes is a shared library: a reader who
+knows one can read the letters of all of it. A child who learns to read on
+the new shapes meets that library, their own country's older books
+included, in letters that look slightly foreign.
+
 There is a fair case on the other side: Bulgarians learn the handwritten
 shapes at school, Russian italics use the same shapes, and readers switch
 between them by context every day. We do not claim the new shapes are
