@@ -1,8 +1,11 @@
 # Standard Cyrillic
 
-A Chrome extension that shows Bulgarian text in the standard Cyrillic letter
-shapes: т, д, г, и, п as in print, not the handwritten shapes that look like
-m, g, s, u and n.
+A browser extension, for Chrome, Edge and Firefox, that shows Bulgarian
+text in the standard Cyrillic letter shapes: т, д, г, и, п as in print, not
+the handwritten shapes that look like m, g, s, u and n.
+
+Why we made it, and what research says about letters shared by two
+alphabets: [WHY.md](WHY.md).
 
 ## How it works
 
