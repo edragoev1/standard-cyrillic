@@ -4,10 +4,11 @@ A browser extension, for Chrome, Edge and Firefox, that shows Bulgarian
 text in the standard Cyrillic letter shapes: т, д, г, и, п as in print, not
 the handwritten shapes that look like m, g, s, u and n.
 
-<img src="docs/comparison.png" width="960" alt="The same Bulgarian text twice: on the left in the handwritten shapes, where т looks like m, д like g, г like a turned s, и like u and п like n; on the right in the standard Cyrillic shapes">
+<img src="docs/comparison.png" width="960" alt="The same Bulgarian text twice. On the left, in the handwritten shapes, Витоша, дим, тип, под read like the Latin words Bumowa, gum, mun, nog; on the right, in the standard Cyrillic shapes, they read as Bulgarian">
 
 The same text in the handwritten shapes (Sofia Sans, whose Cyrillic has them
-as its own letters) and in the standard ones (IBM Plex Sans).
+as its own letters) and in the standard ones (IBM Plex Sans). On the left,
+Витоша reads like "Bumowa", and дим, тип, под like "gum, mun, nog".
 
 Why we made it, and what research says about letters shared by two
 alphabets: [WHY.md](WHY.md).
