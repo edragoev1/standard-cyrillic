@@ -1,0 +1,105 @@
+Firefox Add-ons (addons.mozilla.org) listing: Standard Cyrillic 1.0.0
+====================================================================
+
+Upload:      standard-cyrillic-1.0.0-firefox.zip, in the folder above this one
+             (built by ./make-zips.sh; web-ext lint: 0 errors, 0 warnings,
+             0 notices)
+Images:      store/ (the same as for Chrome)
+Dashboard:   https://addons.mozilla.org/developers/
+             (free; sign in with a Mozilla account in your name)
+
+Submit as:   "On this site" (listed on addons.mozilla.org)
+Platforms:   Firefox and Firefox for Android (the package says both)
+Source code: not needed: nothing is minified or built.
+
+
+DESCRIBE ADD-ON
+---------------
+
+Name:
+Standard Cyrillic
+
+Add-on URL:
+standard-cyrillic
+
+Summary (250 characters at most):
+Shows Bulgarian text in the standard Cyrillic letter shapes: т, д, г, и, п as in print, not as m, g, s, u, n. Collects nothing.
+
+Description, English:
+
+Read Bulgarian websites in the letters you learned to read.
+
+Many Bulgarian websites now draw т like an m, д like a g, г like an s
+turned around, и like a u and п like an n: the shapes of handwriting,
+used in print. Standard Cyrillic puts back the standard letter shapes,
+the ones in books, in Russian and in most Cyrillic print.
+
+How it works:
+• Fonts that switch to these shapes for Bulgarian text are switched back.
+• Fonts that draw these shapes always, as some newspapers' own fonts do,
+  get their Cyrillic letters from IBM Plex Sans or IBM Plex Serif instead,
+  in the same weight and size. Latin letters, numbers and icons stay as
+  the site draws them.
+
+It is on for every site. The button in the toolbar turns it off for a
+site, and shows which fonts it replaced there.
+
+Private: it collects nothing and sends nothing anywhere. It has no
+account, no tracking and no ads.
+
+Free, under the MIT License. IBM Plex is under the SIL Open Font License.
+
+Description, Bulgarian (add Bulgarian as a second locale of the listing):
+
+Четете българските сайтове с буквите, с които сте се научили да четете.
+
+Много български сайтове вече изписват т като m, д като g, г като
+обърнато s, и като u и п като n: формите на ръкописа, пренесени в
+печата. Standard Cyrillic връща стандартните печатни форми на буквите,
+каквито са в книгите и в повечето кирилски издания.
+
+Как работи:
+• Шрифтовете, които сменят буквите за български текст, се връщат към
+  стандартните им форми.
+• Шрифтовете, които винаги рисуват тези форми, както собствените шрифтове
+  на някои вестници, получават кирилските си букви от IBM Plex Sans или
+  IBM Plex Serif, в същата дебелина и размер. Латинските букви, цифрите
+  и иконите остават такива, каквито ги показва сайтът.
+
+Работи на всички сайтове. Бутонът в лентата с инструменти го изключва за
+даден сайт и показва кои шрифтове е заменил там.
+
+Поверително: не събира и не изпраща никакви данни. Без регистрация, без
+проследяване, без реклами.
+
+Безплатно, под лиценза MIT. IBM Plex е под лиценза SIL Open Font License.
+
+Categories:
+  Firefox:              Language Support (and Appearance)
+  Firefox for Android:  Other
+
+Support email:   optional; an address of yours, or leave empty
+Support website: optional; leave empty
+License:         MIT License (choose "MIT/X11 License" in the form); the
+                 fonts stay under the SIL Open Font License, fonts/OFL.txt
+Privacy policy:  not needed: the package declares it collects no data
+                 (data_collection_permissions: none), and Firefox shows that
+                 at install.
+Experimental:    no
+Requires payment: no
+
+Screenshots (1280x800), with captions:
+  screenshot-1-compare.png   Without and with Standard Cyrillic
+                             (Без и със Standard Cyrillic)
+  screenshot-2-before.png    A Bulgarian page without it
+  screenshot-3-after.png     The same page with it
+
+Version notes (1.0.0):
+The first version.
+
+Notes to the reviewer:
+No remote code, no network requests: content.js adds a style that turns
+off the Bulgarian locl forms for lang="bg" text, and, for a web font whose
+т is as wide as its m, font faces of the same family from the bundled IBM
+Plex files (Cyrillic only, U+0400 to U+04FF). storage keeps the sites it is
+turned off for; activeTab lets the popup read the current tab's address.

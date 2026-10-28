@@ -1,0 +1,115 @@
+Microsoft Edge Add-ons listing: Standard Cyrillic 1.0.0
+=====================================================
+
+Upload:      standard-cyrillic-1.0.0-chrome.zip, in the folder above this one
+             (the Chrome package: Edge is built on Chromium and takes it as
+             it is; built by ./make-zips.sh)
+Images:      store/
+Dashboard:   https://partner.microsoft.com/dashboard/microsoftedge/overview
+             (Microsoft Partner Center: register for the Edge program as an
+             individual, in your name, with a Microsoft account; free)
+
+
+AVAILABILITY
+------------
+
+Visibility:  Public
+Markets:     All markets
+
+
+PROPERTIES
+----------
+
+Category:              Accessibility
+Privacy policy:        "Does your extension access, collect or transmit
+                       personal information?" No. No privacy policy URL is
+                       then needed.
+Website URL:           leave empty
+Support contact:       an email of yours, or leave empty
+Mature content:        No
+
+
+STORE LISTINGS
+--------------
+
+Add two languages: English (the default) and Bulgarian. For each:
+
+Description, English (250 characters at least; this one is longer):
+
+Read Bulgarian websites in the letters you learned to read.
+
+Many Bulgarian websites now draw т like an m, д like a g, г like an s
+turned around, и like a u and п like an n: the shapes of handwriting,
+used in print. Standard Cyrillic puts back the standard letter shapes,
+the ones in books, in Russian and in most Cyrillic print.
+
+How it works:
+• Fonts that switch to these shapes for Bulgarian text are switched back.
+• Fonts that draw these shapes always, as some newspapers' own fonts do,
+  get their Cyrillic letters from IBM Plex Sans or IBM Plex Serif instead,
+  in the same weight and size. Latin letters, numbers and icons stay as
+  the site draws them.
+
+It is on for every site. The button in the toolbar turns it off for a
+site, and shows which fonts it replaced there.
+
+Private: it collects nothing and sends nothing anywhere. It has no
+account, no tracking and no ads.
+
+Free, under the MIT License. IBM Plex is under the SIL Open Font License.
+
+Description, Bulgarian:
+
+Четете българските сайтове с буквите, с които сте се научили да четете.
+
+Много български сайтове вече изписват т като m, д като g, г като
+обърнато s, и като u и п като n: формите на ръкописа, пренесени в
+печата. Standard Cyrillic връща стандартните печатни форми на буквите,
+каквито са в книгите и в повечето кирилски издания.
+
+Как работи:
+• Шрифтовете, които сменят буквите за български текст, се връщат към
+  стандартните им форми.
+• Шрифтовете, които винаги рисуват тези форми, както собствените шрифтове
+  на някои вестници, получават кирилските си букви от IBM Plex Sans или
+  IBM Plex Serif, в същата дебелина и размер. Латинските букви, цифрите
+  и иконите остават такива, каквито ги показва сайтът.
+
+Работи на всички сайтове. Бутонът в лентата с инструменти го изключва за
+даден сайт и показва кои шрифтове е заменил там.
+
+Поверително: не събира и не изпраща никакви данни. Без регистрация, без
+проследяване, без реклами.
+
+Безплатно, под лиценза MIT. IBM Plex е под лиценза SIL Open Font License.
+
+Extension Store logo:      logo-300x300.png
+Small promotional tile:    promo-small-440x280.png (optional)
+Screenshots (1280x800):    screenshot-1-compare.png, screenshot-2-before.png,
+                           screenshot-3-after.png
+Short description:         taken from the manifest:
+                           Shows Bulgarian text in the standard Cyrillic
+                           letter shapes: т, д, г, и, п as in print, not as
+                           m, g, s, u, n.
+Search terms (7 at most, 30 characters each, 21 words in all):
+                           Bulgarian
+                           Cyrillic
+                           кирилица
+                           български
+                           letter shapes
+                           fonts
+                           readability
+
+
+SUBMISSION
+----------
+
+Notes for certification:
+No remote code and no network requests. content.js adds a style that
+turns off the Bulgarian locl forms for lang="bg" text and, for a web font
+whose т is as wide as its m, font faces of the same family from the
+bundled IBM Plex files (Cyrillic only, U+0400 to U+04FF). storage keeps
+the sites it is turned off for; activeTab lets the popup read the address
+of the current tab. To try it: open a Bulgarian news site, such as one
+whose headlines show т drawn like an m, and compare with the extension
+turned off from its toolbar button.
