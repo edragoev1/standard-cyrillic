@@ -75,6 +75,7 @@ Store icon (128x128):   icons/icon128.png in the zip (the dashboard may
 Screenshots (1280x800): screenshot-1-compare.png, screenshot-2-before.png,
                         screenshot-3-after.png
 Small promo tile:       promo-small-440x280.png
+Marquee promo tile:     promo-marquee-1400x560.png (optional)
 Official URL / Homepage: none needed. Support URL: none, or an email.
 
 
