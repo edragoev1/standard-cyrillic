@@ -27,7 +27,7 @@ The handwritten shapes reach a page in one of two ways:
    letters, digits and icons stay as they are.
 
 It is on for every site. The button in the toolbar turns it off for the site
-of the tab, and says which fonts it replaced there.
+of the tab, and says how many fonts it replaced there; their names show on hover.
 
 Nothing is collected or sent anywhere. The only permissions are `storage`,
 for the sites it is off for, and `activeTab`, for the popup to know the site.

@@ -7,6 +7,7 @@ const status = document.getElementById("status");
 
 function showStatus(tabId) {
     chrome.tabs.sendMessage(tabId, "status", (reply) => {
+        status.title = "";
         if (chrome.runtime.lastError || reply === undefined) {
             status.textContent = "Reload the page to apply it here.";
             return;
@@ -17,7 +18,9 @@ function showStatus(tabId) {
             status.textContent =
                 "On. No font here draws т as m; Bulgarian forms of other fonts are turned off.";
         } else {
-            status.textContent = `On. Standard Cyrillic letters in place of: ${reply.replaced.join(", ")}.`;
+            const count = reply.replaced.length;
+            status.textContent = `${count} ${count === 1 ? "font" : "fonts"} replaced on this page.`;
+            status.title = reply.replaced.join(", ");   // Their names, for who hovers
         }
     });
 }
