@@ -15,8 +15,7 @@ function showStatus(tabId) {
         if (!reply.enabled) {
             status.textContent = "Turned off for this site.";
         } else if (reply.replaced.length === 0) {
-            status.textContent =
-                "On. No font here draws т as m; Bulgarian forms of other fonts are turned off.";
+            status.textContent = "No fonts to replace on this page.";
         } else {
             const count = reply.replaced.length;
             status.textContent = `${count} ${count === 1 ? "font" : "fonts"} replaced on this page.`;
