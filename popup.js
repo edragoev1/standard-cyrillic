@@ -13,7 +13,7 @@ function showStatus(tabId) {
             return;
         }
         if (!reply.enabled) {
-            status.textContent = "Off here: the page shows its own letters.";
+            status.textContent = "Turned off for this site.";
         } else if (reply.replaced.length === 0) {
             status.textContent =
                 "On. No font here draws т as m; Bulgarian forms of other fonts are turned off.";
