@@ -1,7 +1,7 @@
 Firefox Add-ons (addons.mozilla.org) listing: Standard Cyrillic 1.0.1
 ====================================================================
 
-Upload:      standard-cyrillic-1.0.1-firefox.zip, in the folder above this one
+Upload:      standard-cyrillic-1.0.2-firefox.zip, in the folder above this one
              (built by ./make-zips.sh; web-ext lint: 0 errors, 0 warnings,
              0 notices)
 Images:      store/ (the same as for Chrome)
@@ -94,6 +94,10 @@ Screenshots (1280x800), with captions:
                              (Без и със Standard Cyrillic)
   screenshot-2-before.png    A Bulgarian page without it
   screenshot-3-after.png     The same page with it
+
+Version notes (1.0.2):
+
+Shorter, plainer messages in the popup.
 
 Version notes (1.0.1):
 The first version.
